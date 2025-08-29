@@ -1,0 +1,19 @@
+\contentsline {section}{\numberline {1}Motivation}{1}{section.1}%
+\contentsline {section}{\numberline {2}Basic usage}{1}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Standard dice}{1}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Big dot dice}{2}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Text on dice}{2}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}Layout dice}{2}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2.5}Colour}{3}{subsection.2.5}%
+\contentsline {subsection}{\numberline {2.6}Size}{4}{subsection.2.6}%
+\contentsline {section}{\numberline {3}Advanced usage notes}{6}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Dependencies}{6}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Rotated text}{6}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Size}{6}{subsection.3.3}%
+\contentsline {subsubsection}{\numberline {3.3.1}Size and inline display}{6}{subsubsection.3.3.1}%
+\contentsline {subsubsection}{\numberline {3.3.2}Changing the basic size}{7}{subsubsection.3.3.2}%
+\contentsline {subsubsection}{\numberline {3.3.3}Changing all the sizes}{8}{subsubsection.3.3.3}%
+\contentsline {subsubsection}{\numberline {3.3.4}Text doesn't fit?}{9}{subsubsection.3.3.4}%
+\contentsline {subsection}{\numberline {3.4}Border colour}{9}{subsection.3.4}%
+\contentsline {subsection}{\numberline {3.5}Arbitrary drawing on dice faces}{9}{subsection.3.5}%
+\contentsline {section}{\numberline {4}Is it `die' or `dice'?}{10}{section.4}%
