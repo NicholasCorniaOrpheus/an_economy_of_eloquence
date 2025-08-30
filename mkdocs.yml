@@ -54,10 +54,14 @@ theme:
         #name: Switch to light mode        
 
   features:
-    #- navigation.instant
-    #- navigation.instant.prefetch
-    #- navigation.instant.progress
+    - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.instant.progress
+    - navigation.sections
+    - navigation.expand
+    - navigation.prune
     - search.share
+    - toc.integrate
     #- navigation.footer
     #- navigation.tabs
     #- navigation.tabs.sticky
@@ -86,5 +90,9 @@ markdown_extensions:
   - admonition
   - pymdownx.details
   - pymdownx.superfences
+  # icons extension!
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - pymdownx.tabbed:
       alternate_style: true
