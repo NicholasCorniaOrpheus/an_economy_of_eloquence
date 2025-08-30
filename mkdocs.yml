@@ -4,7 +4,7 @@ repo_url: https://github.com/NicholasCorniaOrpheus/an_economy_of_eloquence
 nav:
   - Home: index.md
   - Wat is this game about?: about.md
-  - Collaborative Research: collaborative_research.md
+  #- Collaborative Research: collaborative_research.md
   - Core Rules: core_rules.md
 
 plugins:
