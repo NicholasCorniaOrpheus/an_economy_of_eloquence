@@ -73,6 +73,8 @@ Below the list of actions associated with each musical interval:
 
     You can introduce a new entity on the knowledge graph and describe it to the fellow players using a time slot. The can create a statement with an entity already present on the board if they wish.
 
+    Afterwards, gain one _eloquence_ tokens. :material-plus-circle:
+
 -   :octicons-book-16: __Digress (Fifth)__
 
     ---
@@ -80,7 +82,9 @@ Below the list of actions associated with each musical interval:
 
     You can use a time slot to deepen the conversation around an entity on the knowledge graph. After that they can create a statement, a new connection with another concept on board.
 
--   :octicons-book-16: __Quarrel (Octave)__
+    Afterwards, gain one _eloquence_ token. :material-plus-circle:
+
+-   :octicons-comment-discussion-16: __Quarrel (Octave)__
 
     ---
     The inverval of an Octave allows the active player to _Quarrel_.
@@ -91,31 +95,57 @@ Below the list of actions associated with each musical interval:
 
     After that the other players who did not participated in the content, vote the most convincing speaker who immediately can create a statement.
 
--   :octicons-book-16: __Summon (Third)__
+    If you have been part of the quarrel, gain one _eloquence_ token, otherwise lose one. :material-plus-circle: :material-minus-circle:
+
+-   :simple-discourse: __Summon (Third)__
 
     ---
     The interval of a Third allows the active player to _Summon_.
 
     Choose a fellow player and invite them to talk about an entity on board.
 
-    After that you can create a statement.
+    After that you can create a statement,then lose one _eloquence_ token. :material-minus-circle:
 
 
--   :octicons-book-16: __Strife__ (Dissonance)
+-   :material-lightning-bolt: __Strife (Dissonance)__ 
+
     ---
     
     A Dissonance forces the active player to _Strife_.
 
-    TO BE CONTINUED
+    Choose one of the following options:
 
-    
+    - Reset your _Resonance Pool_ to empty, then lose two _eloquence_ tokens. :material-minus-circle:
+    - Designate another player and empty their _Resonance Pool_, then gain two _eloquence_ tokens. :material-plus-circle:
+    - Gain four _eloquence tokens_ with no further consequences. :material-plus-circle:
 
-    
 </div>
+    
+## Harmony Score
 
-### Invent (Unison)
+_An Economy of Eloquence_ is a cooperative game that takes inspiration to collaborative games such as [_Hanabi_](https://boardgamegeek.com/boardgame/98778/hanabi) and [_Tales of Kunugi_](https://boardgamegeek.com/boardgame/422620/tales-of-kunugi).
 
+The main goal of the group is to achieve the lowest collective _Harmony Score_, reflecting balance and collaboration between the players during the creation of the knowledge graph.
+
+When a player reaches the designated end-of-game station, the game session ends.  The GM computes the average value (rounded up) for all players, based on the amount of coins they own. 
+
+Afterwards, each player computes the absolute distance between their coin amount and the aforementioned average value. This number is called the _Harmony Score_ of a player. Finally, the GM computes the sum of all the Harmony scores, and the final result will reflect how balance and collaborative the game session has been.
+
+For example, a session with 5 players ends with _eloquence_ tokens amounts of 8, 12, 10, 22 and 14.
+The average value is 14 (rounded up) and for each player we have _Harmony Scores_ of 6, 2, 4, 8, 0, leading to a final average score of 4.
+
+Average Harmony score (heuristic) table, based on the number of players _n_
+
+| Average Harmony score range | victory level |
+| --------------------------- | ------------- |
+| 0 to _n_                    | Excellent     |
+| _n+1_ to _2n_               | Great         |
+| _2n+1_ to _3n_              | Good          |
+| _3n+1_ to _4n_              | Mediocre      |
+| more than _4n+1_            | Unbalanced    |
  
+
+
 
 
 
