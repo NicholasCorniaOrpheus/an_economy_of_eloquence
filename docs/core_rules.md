@@ -127,18 +127,18 @@ Inspired by the board game [_Patchwork_](https://boardgamegeek.com/boardgame/163
 
 | Action   | Meeple advance value |
 | -------- | -------------- |
-| _Invent_ | d6  |
-| _Digress_ | d6 |
-| _Quarrel_ | 2d6 |
-| _Summon_ | d6 |
-| _Friction_ | 2d6 |
+| _Invent_ | 2d6  |
+| _Digress_ | 2d6 |
+| _Quarrel_ | 3d6 |
+| _Summon_ | 2d6 |
+| _Friction_ | 3d6 |
 
 Usually, the player with meeple in the lowest station of the Game of Goose can take the next turn. In case of ties, the GM can choose which player goes first.
 
 The GM has to decide beforehand which station will end the game. We advise the following values, but bear in mind that larger groups will take longer to reach the end station:
 
-- 18 for a short session
-- 32 for a comprehensive exploration
+- 28 for a short session
+- 42 for a comprehensive exploration
 - 63 for a long session ranging multiple hours, for example a conference day.
     
 ## Harmony Score
