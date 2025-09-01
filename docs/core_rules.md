@@ -107,11 +107,11 @@ Below the list of actions associated with each musical interval:
     After that you can create a statement,then lose one _eloquence_ token. :material-minus-circle:
 
 
--   :material-lightning-bolt: __Strife (Dissonance)__ 
+-   :material-lightning-bolt: __Friction (Dissonance)__ 
 
     ---
     
-    A Dissonance forces the active player to _Strife_.
+    A Dissonance forces the active player to _Friction_.
 
     Choose one of the following options:
 
@@ -120,6 +120,26 @@ Below the list of actions associated with each musical interval:
     - Gain four _eloquence tokens_ with no further consequences. :material-plus-circle:
 
 </div>
+
+## The Game of Goose
+
+Inspired by the board game [_Patchwork_](https://boardgamegeek.com/boardgame/163412/patchwork), we decided to use a dynamic initiative system for our game as an alternative to the conventional clockwise or counter-clockwise turn order. Each player places a meeple on a Game of Goose board. At the end of each player's turn, their meeple will advance according to the perfomed _Eloquent Action_.
+
+| Action   | Meeple advance value |
+| -------- | -------------- |
+| _Invent_ | d6  |
+| _Digress_ | d6 |
+| _Quarrel_ | 2d6 |
+| _Summon_ | d6 |
+| _Friction_ | 2d6 |
+
+Usually, the player with meeple in the lowest station of the Game of Goose can take the next turn. In case of ties, the GM can choose which player goes first.
+
+The GM has to decide beforehand which station will end the game. We advise the following values, but bear in mind that larger groups will take longer to reach the end station:
+
+- 18 for a short session
+- 32 for a comprehensive exploration
+- 63 for a long session ranging multiple hours, for example a conference day.
     
 ## Harmony Score
 
