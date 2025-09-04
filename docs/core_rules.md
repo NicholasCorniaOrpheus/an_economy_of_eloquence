@@ -158,7 +158,7 @@ The average value is 14 (rounded up) and for each player we have _Harmony Scores
 
 Average Harmony score (heuristic) table, based on the number of players _n_
 
-| Average Harmony score range | victory level |
+| Average Harmony Score range | Victory Level |
 | --------------------------- | ------------- |
 | 0 to _n_                    | Excellent     |
 | _n+1_ to _2n_               | Great         |
