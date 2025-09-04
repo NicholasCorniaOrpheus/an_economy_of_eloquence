@@ -20,7 +20,7 @@ In _An Economy of Eloquence_, entities are represented by wooden tiles that can 
 
 The Resonance System is a dice pool resolution mechanics designed by the author, and has been used in several experimental games such as [Sprezzatura RPG](https://nicholascornia89.github.io/sprezzatura_rpg/).
 
-The players will use pools of eight-sides dice (d8s) and assemble pairs of results to generate a rational number. The highest prime number of the fraction (after reducing it) is considered as result. With eight-sides dice there are only five possibilities, each of them reflecting a musical proportion, according to Medieval and Renaissance theory:
+The players will use pools of ten-sides dice (d8s) and assemble pairs of results to generate a rational number. The highest prime number of the fraction (after reducing it) is considered as result. With ten-sides dice there are only five possibilities, each of them reflecting a musical proportion, according to Medieval and Renaissance theory:
 
 - **Unison (U)**: A fraction giving the unit 1, when both dice presents the same number, generates the unison proportion.
 - **Octave (O)**: A fraction giving the ratio 2:1, such as <sup>4</sup>/<sub>2</sub>,   generates an octave.
@@ -30,16 +30,18 @@ The players will use pools of eight-sides dice (d8s) and assemble pairs of resul
 
 Below a table describing all the possible combination of number given two d8s:
 
-| d8 x d8 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 |
-| :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| 1 | **U** | **O** | **F** | **O** | **T** | **F** | **D** | **O** |
-| 2 | | **U** | **F** | **O** | **T** | **F** | **D** | **O** |
-| 3 | | | **U** | **F** | **T** | **O** | **D** | **F** | 
-| 4 | | | | **U** | **T** | **F** | **D** | **O** |
-| 5 | | | | | **U** | **T** | **D** | **T** |
-| 6 | | | | | | **U** | **D** | **F** |
-| 7 | | | | | | | **U** | **D** |
-| 8 | | | | | | | | **U** |
+| d10 x d10 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 |
+| :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| 1 | **U** | **O** | **F** | **O** | **T** | **F** | **D** | **O** | **F** | **T** |
+| 2 | | **U** | **F** | **O** | **T** | **F** | **D** | **O** | **F**| **T** |
+| 3 | | | **U** | **F** | **T** | **O** | **D** | **F** | **T** |
+| 4 | | | | **U** | **T** | **F** | **D** | **O** | **F** | **T** |
+| 5 | | | | | **U** | **T** | **D** | **T** | **T** | **O** |
+| 6 | | | | | | **U** | **D** | **F** | **F** | **T** |
+| 7 | | | | | | | **U** | **D** | **D** | **D** |
+| 8 | | | | | | | | **U** | **F** | **T** |
+| 9 | | | | | | | | | **U** | **T** |
+| 10 | | | | | | | |  | | **U**|
 
 Given two dice the probability to obtain a given musical interval is not uniform, this means that the game favors some results than others. It is up to the players to bend this asymmetry in their favor thanks to the _Resonance Pool_ mechanics.
 
@@ -52,7 +54,7 @@ This mechanics has been designed to encourage collaboration and engagement of al
 
 ## Eloquent Actions
 
-To determine the available actions, a player rolls 4 eight-sided dice at the beginning of their turn. They can assemble a pair of dice to generate a musical interval, selecting dice from
+To determine the available actions, a player rolls 4 ten-sided dice at the beginning of their turn. They can assemble a pair of dice to generate a musical interval, selecting dice from
 
 - the 4 dice just rolled
 - a die from their own _Resonance Pool_
@@ -66,28 +68,28 @@ Below the list of actions associated with each musical interval:
 
 <div class="grid cards" markdown>
 
--   :material-pen: __Invent (Unison)__
+-   :material-pen: __Invent (Fifth)__
 
     ---
-    The interval of an Unison allows the active player to _Invent_. 
+    The interval of a Fifth allows the active player to _Invent_. 
 
     You can introduce a new entity on the knowledge graph and describe it to the fellow players using a time slot. The can create a statement with an entity already present on the board if they wish.
 
     Afterwards, gain one _eloquence_ tokens. :material-plus-circle:
 
--   :octicons-book-16: __Digress (Fifth)__
+-   :octicons-book-16: __Digress (Third)__
 
     ---
-    The interval of a Fifth allows the active player to _Digress_.
+    The interval of a Third allows the active player to _Digress_.
 
     You can use a time slot to deepen the conversation around an entity on the knowledge graph. After that they can create a statement, a new connection with another concept on board.
 
     Afterwards, gain one _eloquence_ token. :material-plus-circle:
 
--   :octicons-comment-discussion-16: __Quarrel (Octave)__
+-   :octicons-comment-discussion-16: __Quarrel (Unison)__
 
     ---
-    The inverval of an Octave allows the active player to _Quarrel_.
+    The inverval of an Unison allows the active player to _Quarrel_.
 
     Choose two players (they can include youself) and an entity on the knowledge graph.
 
@@ -97,10 +99,10 @@ Below the list of actions associated with each musical interval:
 
     If you have been part of the quarrel, gain one _eloquence_ token, otherwise lose one. :material-plus-circle: :material-minus-circle:
 
--   :simple-discourse: __Summon (Third)__
+-   :simple-discourse: __Summon (Octave)__
 
     ---
-    The interval of a Third allows the active player to _Summon_.
+    The interval of an Octave allows the active player to _Summon_.
 
     Choose a fellow player and invite them to talk about an entity on board.
 
