@@ -13,6 +13,15 @@
 
 }
 
+/* not working
+table {
+  table-layout: fixed;
+  border-collapse: collapse;
+  max-width: 100%;
+  border-spacing: 100px;
+}
+
+*/
 
 
 
