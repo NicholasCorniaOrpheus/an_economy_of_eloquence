@@ -18,12 +18,12 @@ For this game you will need:
 - 1 to 6 hours, depending on the size of the group and the end-of-game station designated.
 - Pencils, post-its and small index cards.
 - Cords or wooden sticks to represent stamentents.
-- A set of eight-sided dice for each player.
+- A set of ten-sided dice for each player.
 - Movable flat surfaces to store index cards to represent entities.
 
 ### Preparatory Phase
 
-Each player collects 4 initial _eloquence_ tokens,and 4 eight-sided dice.
+Each player collects 4 initial _eloquence_ tokens,and 4 ten-sided dice.
 
 Afterwards, the GM asks each player to place one entity on the board, without adding any statement to it. These entities can be tied to a theme, such as the players' research interest or topics of a conference.
 
@@ -33,11 +33,11 @@ Finally, the group determine the end-of-game station that will trigger the end o
 
 ## Player's Turn
 
-1. Roll 4d8 and look for proportions according to the [_Resonance System_](core_rules.md)
+1. Roll 4d10 and look for proportions according to the [_Resonance System_](core_rules.md)
 2. Add one die from your own _Resonance pool_ or ask it from another player.
 3. Choose one pair of dice and perform the corresponding [_Eloquent Action_](core_rules.md)
 4. Gain or lose _eloquence_ tokens.
-5. Store one unused die from the initial 4d8 and add it to your _Resonance Pool_.
+5. Store one unused die from the initial 4d10 and add it to your _Resonance Pool_.
 6. Increase your station on the Game of Goose according to the action value.
 
 ## The Game Session

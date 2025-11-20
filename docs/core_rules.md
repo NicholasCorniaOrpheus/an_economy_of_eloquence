@@ -20,7 +20,7 @@ In _An Economy of Eloquence_, entities are represented by wooden tiles that can 
 
 The Resonance System is a dice pool resolution mechanics designed by the author, and has been used in several experimental games such as [Sprezzatura RPG](https://nicholascornia89.github.io/sprezzatura_rpg/).
 
-The players will use pools of ten-sides dice (d8s) and assemble pairs of results to generate a rational number. The highest prime number of the fraction (after reducing it) is considered as result. With ten-sides dice there are only five possibilities, each of them reflecting a musical proportion, according to Medieval and Renaissance theory:
+The players will use pools of ten-sides dice (d10s) and assemble pairs of results to generate a rational number. The highest prime number of the fraction (after reducing it) is considered as result. With ten-sides dice there are only five possibilities, each of them reflecting a musical proportion, according to Medieval and Renaissance theory:
 
 - **Unison (U)**: A fraction giving the unit 1, when both dice presents the same number, generates the unison proportion.
 - **Octave (O)**: A fraction giving the ratio 2:1, such as <sup>4</sup>/<sub>2</sub>,   generates an octave.
@@ -28,13 +28,13 @@ The players will use pools of ten-sides dice (d8s) and assemble pairs of results
 - **Third (T)**: A fraction with a ration such that the highest prime number is 5, such as <sup>6</sup>/<sub>5</sub> or <sup>5</sup>/<sub>4</sub>, generates the interval of third, and its complementary the sixth.
 - **Dissonance (D)**: In this system, ratios with a dominant prime number of 7 are associated with dissonant harsh sounds (at least for 16th centuries ears). 
 
-Below a table describing all the possible combination of number given two d8s:
+Below a table describing all the possible combination of number given two d10s:
 
 | d10 x d10 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 | 1 | **U** | **O** | **F** | **O** | **T** | **F** | **D** | **O** | **F** | **T** |
 | 2 | | **U** | **F** | **O** | **T** | **F** | **D** | **O** | **F**| **T** |
-| 3 | | | **U** | **F** | **T** | **O** | **D** | **F** | **T** |
+| 3 | | | **U** | **F** | **T** | **O** | **D** | **F** | **T** | **T** |
 | 4 | | | | **U** | **T** | **F** | **D** | **O** | **F** | **T** |
 | 5 | | | | | **U** | **T** | **D** | **T** | **T** | **O** |
 | 6 | | | | | | **U** | **D** | **F** | **F** | **T** |
@@ -44,6 +44,15 @@ Below a table describing all the possible combination of number given two d8s:
 | 10 | | | | | | | |  | | **U**|
 
 Given two dice the probability to obtain a given musical interval is not uniform, this means that the game favors some results than others. It is up to the players to bend this asymmetry in their favor thanks to the _Resonance Pool_ mechanics.
+
+Here you can find the probability distribution, given two dice of obtaining a certain proportion:
+
+- P(U) = <sup>10</sup>/<sub>100</sub>
+- P(O) = <sup>16</sup>/<sub>100</sub>
+- P(F) = <sup>26</sup>/<sub>100</sub>
+- P(T) = <sup>30</sup>/<sub>100</sub>
+- P(D) = <sup>18</sup>/<sub>100</sub>
+
 
 ### Resonance Pool
 
@@ -154,7 +163,7 @@ When a player reaches the designated end-of-game station, the game session ends.
 Afterwards, each player computes the absolute distance between their coin amount and the aforementioned average value. This number is called the _Harmony Score_ of a player. Finally, the GM computes the sum of all the Harmony scores, and the final result will reflect how balance and collaborative the game session has been.
 
 For example, a session with 5 players ends with _eloquence_ tokens amounts of 8, 12, 10, 22 and 14.
-The average value is 14 (rounded up) and for each player we have _Harmony Scores_ of 6, 2, 4, 8, 0, leading to a final average score of 4.
+The average value is 14 (rounded up) and for each player we have _Harmony Scores_ of 6, 2, 4, 8, 0, leading to a final collective value of 20.
 
 Average Harmony score (heuristic) table, based on the number of players _n_
 

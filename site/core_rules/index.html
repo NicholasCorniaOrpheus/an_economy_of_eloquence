@@ -486,7 +486,7 @@
 
 <h2 id="resonance-system">Resonance System</h2>
 <p>The Resonance System is a dice pool resolution mechanics designed by the author, and has been used in several experimental games such as <a href="https://nicholascornia89.github.io/sprezzatura_rpg/">Sprezzatura RPG</a>.</p>
-<p>The players will use pools of ten-sides dice (d8s) and assemble pairs of results to generate a rational number. The highest prime number of the fraction (after reducing it) is considered as result. With ten-sides dice there are only five possibilities, each of them reflecting a musical proportion, according to Medieval and Renaissance theory:</p>
+<p>The players will use pools of ten-sides dice (d10s) and assemble pairs of results to generate a rational number. The highest prime number of the fraction (after reducing it) is considered as result. With ten-sides dice there are only five possibilities, each of them reflecting a musical proportion, according to Medieval and Renaissance theory:</p>
 <ul>
 <li><strong>Unison (U)</strong>: A fraction giving the unit 1, when both dice presents the same number, generates the unison proportion.</li>
 <li><strong>Octave (O)</strong>: A fraction giving the ratio 2:1, such as <sup>4</sup>/<sub>2</sub>,   generates an octave.</li>
@@ -494,7 +494,7 @@
 <li><strong>Third (T)</strong>: A fraction with a ration such that the highest prime number is 5, such as <sup>6</sup>/<sub>5</sub> or <sup>5</sup>/<sub>4</sub>, generates the interval of third, and its complementary the sixth.</li>
 <li><strong>Dissonance (D)</strong>: In this system, ratios with a dominant prime number of 7 are associated with dissonant harsh sounds (at least for 16th centuries ears). </li>
 </ul>
-<p>Below a table describing all the possible combination of number given two d8s:</p>
+<p>Below a table describing all the possible combination of number given two d10s:</p>
 <table>
 <thead>
 <tr>
@@ -549,7 +549,7 @@
 <td style="text-align: center;"><strong>D</strong></td>
 <td style="text-align: center;"><strong>F</strong></td>
 <td style="text-align: center;"><strong>T</strong></td>
-<td style="text-align: center;"></td>
+<td style="text-align: center;"><strong>T</strong></td>
 </tr>
 <tr>
 <td style="text-align: center;">4</td>
@@ -645,6 +645,14 @@
 </tbody>
 </table>
 <p>Given two dice the probability to obtain a given musical interval is not uniform, this means that the game favors some results than others. It is up to the players to bend this asymmetry in their favor thanks to the <em>Resonance Pool</em> mechanics.</p>
+<p>Here you can find the probability distribution, given two dice of obtaining a certain proportion:</p>
+<ul>
+<li>P(U) = <sup>10</sup>/<sub>100</sub></li>
+<li>P(O) = <sup>16</sup>/<sub>100</sub></li>
+<li>P(F) = <sup>26</sup>/<sub>100</sub></li>
+<li>P(T) = <sup>30</sup>/<sub>100</sub></li>
+<li>P(D) = <sup>18</sup>/<sub>100</sub></li>
+</ul>
 <h3 id="resonance-pool">Resonance Pool</h3>
 <p>At the end of each turn, the active player can store an unused die, one that did not belong to the pair of dice that generated the action just taken, to a personal pool called the <em>Resonance Pool</em>. These dice can be used at any moment by the player to assemble musical intervals either during their turn of any other player's. There is no limit of dice that can be kept, but an action like <em>discord</em> can potentially reset a player's pool.</p>
 <p>This mechanics has been designed to encourage collaboration and engagement of all players, reducing the burden of <em>downtime</em><sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup>.</p>
@@ -750,7 +758,7 @@
 <p>When a player reaches the designated end-of-game station, the game session ends.  The GM computes the average value (rounded up) for all players, based on the amount of coins they own. </p>
 <p>Afterwards, each player computes the absolute distance between their coin amount and the aforementioned average value. This number is called the <em>Harmony Score</em> of a player. Finally, the GM computes the sum of all the Harmony scores, and the final result will reflect how balance and collaborative the game session has been.</p>
 <p>For example, a session with 5 players ends with <em>eloquence</em> tokens amounts of 8, 12, 10, 22 and 14.
-The average value is 14 (rounded up) and for each player we have <em>Harmony Scores</em> of 6, 2, 4, 8, 0, leading to a final average score of 4.</p>
+The average value is 14 (rounded up) and for each player we have <em>Harmony Scores</em> of 6, 2, 4, 8, 0, leading to a final collective value of 20.</p>
 <p>Average Harmony score (heuristic) table, based on the number of players <em>n</em></p>
 <table>
 <thead>
