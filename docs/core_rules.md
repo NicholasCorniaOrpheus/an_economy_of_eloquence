@@ -14,7 +14,7 @@ A knowledge graph is a non-hierarchical data structure composed by entities, nam
 
 In _An Economy of Eloquence_, entities are represented by wooden tiles that can store a small index card. Statements, relating two entities on the graph, are represented by coloured cords. 
 
-<center><img src="../assets/images/entities_example.png" width="500" height="300"></center>
+<center><img src="../assets/images/entities_example_transparent.png" width="500" height="300"></center>
 
 ## Resonance System
 

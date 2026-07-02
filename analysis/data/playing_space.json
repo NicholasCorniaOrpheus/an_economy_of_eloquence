@@ -1,0 +1,68 @@
+{
+  "stations": [
+    {
+      "player_id": 0,
+      "station_value": 3
+    },
+    {
+      "player_id": 1,
+      "station_value": 3
+    },
+    {
+      "player_id": 2,
+      "station_value": 2
+    },
+    {
+      "player_id": 3,
+      "station_value": 3
+    }
+  ],
+  "resonance_pools": [
+    {
+      "player_id": 0,
+      "dice_pool": [
+        2,
+        5
+      ]
+    },
+    {
+      "player_id": 1,
+      "dice_pool": [
+        3,
+        1
+      ]
+    },
+    {
+      "player_id": 2,
+      "dice_pool": []
+    },
+    {
+      "player_id": 3,
+      "dice_pool": [
+        4
+      ]
+    }
+  ],
+  "board": [
+    {
+      "entity_id": 0,
+      "entity_name": "Bob Dylan",
+      "connected_to": []
+    },
+    {
+      "entity_id": 1,
+      "entity_name": "Patti Smith",
+      "connected_to": []
+    },
+    {
+      "entity_id": 2,
+      "entity_name": "Wolfgang Amadeus Mozart",
+      "connected_to": []
+    },
+    {
+      "entity_id": 3,
+      "entity_name": "Frédéric Chopin",
+      "connected_to": []
+    }
+  ]
+}

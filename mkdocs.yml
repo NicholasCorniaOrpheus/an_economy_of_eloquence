@@ -11,14 +11,14 @@ plugins:
   - search
 
 extra_css:
-  - assets/stylesheets/extra.css
+  - assets/css/extras.css
 
 #extra_javascript:
   #- assets/javascripts/extra.js
 
 theme:
   name: material
-  custom_dir: overrides
+  #custom_dir: overrides
   #logo: assets/images/faam-logo-gold.png
   #favicon: assets/images/favicon.ico
   language: en
@@ -31,27 +31,13 @@ theme:
       quote: fontawesome/solid/quote-left
 
   font:
-      text: Sofia Sans
+      text: Crimson Pro
   palette:
-    # Palette toggle for light mode
-    #- scheme: default
-      #primary: custom
-      #default: custom
-      #footer: custom
-      #accent: custom
-      #toggle:
-        #icon: material/weather-night
-        #name: Switch to dark mode
-
-    # Palette toggle for dark mode
-    - scheme: slate
+    - scheme: default
       primary: custom
       default: custom
       footer: custom
-      accent: custom
-      #toggle:
-        #icon: material/weather-sunny
-        #name: Switch to light mode        
+      accent: amber     
 
   features:
     - navigation.instant
@@ -62,12 +48,7 @@ theme:
     - navigation.prune
     - search.share
     - toc.integrate
-    #- navigation.footer
-    #- navigation.tabs
-    #- navigation.tabs.sticky
-    #- navigation.top
-    #- toc.follow
-    #- toc
+
 
 copyright: Copyright &copy; 2025 Orpheus Instituut, Resounding Libraries
 
