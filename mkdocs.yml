@@ -12,9 +12,12 @@ plugins:
 
 extra_css:
   - assets/css/extras.css
+  - https://unpkg.com/katex@0/dist/katex.min.css
 
-#extra_javascript:
-  #- assets/javascripts/extra.js
+extra_javascript:
+  - assets/js/katex.js
+  - https://unpkg.com/katex@0/dist/katex.min.js
+  - https://unpkg.com/katex@0/dist/contrib/auto-render.min.js
 
 theme:
   name: material
@@ -77,3 +80,5 @@ markdown_extensions:
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - pymdownx.tabbed:
       alternate_style: true
+  - pymdownx.arithmatex:
+      generic: true
