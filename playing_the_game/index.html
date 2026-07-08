@@ -68,6 +68,8 @@
     
       <link rel="stylesheet" href="../assets/css/extras.css">
     
+      <link rel="stylesheet" href="https://unpkg.com/katex@0/dist/katex.min.css">
+    
     <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -487,38 +489,113 @@
 <h2 id="setting-up-the-board">Setting up the Board</h2>
 <p>For this game you will need:</p>
 <ul>
-<li>3-10 players, including a GM.</li>
-<li>1 to 6 hours, depending on the size of the group and the end-of-game station designated.</li>
-<li>Pencils, post-its and small index cards.</li>
-<li>Cords or wooden sticks to represent stamentents.</li>
-<li>A set of ten-sided dice for each player.</li>
-<li>Movable flat surfaces to store index cards to represent entities.</li>
+<li>3-10 players and a Game Master.</li>
+<li>A pawn (meeple) for each player.</li>
+<li>A Game of Goose board, usually made of 63 stations, or a custom one.</li>
+<li>1 to 3 hours, depending on the size of the group and the end-of-game station designated.</li>
+<li>Pencils, post-its and small index cards to write down entities.</li>
+<li>A set of 4-8 eight-sided dice for each player and 3 six-sided dice for the station advancement.</li>
+<li>Hexagonal tiles</li>
+<li>A (digital) hourglass in order to keep track of time slots.</li>
 </ul>
 <h3 id="preparatory-phase">Preparatory Phase</h3>
-<p>Each player collects 4 initial <em>eloquence</em> tokens,and 4 ten-sided dice.</p>
-<p>Afterwards, the GM asks each player to place one entity on the board, without adding any statement to it. These entities can be tied to a theme, such as the players' research interest or topics of a conference.</p>
-<p>Once every player has placed an entity on the board they define their initial position on the Game of Goose by rolling a d6 and place their meeple on the station correspondent with the die result. Ties will eventually emerge, and the GM has the responsibility to decide which player goes first.</p>
+<p>Each player collects 2 eight-sided dice.</p>
+<p>Afterwards, the GM asks each player to place one entity on the board. These entities can be tied to a theme, such as the players' research interest or topics of a conference.</p>
+<p>Once every player has placed an entity on the board they define their initial position on the Game of Goose by rolling a six-sided die and place their pawn on the station correspondent to the die result. Ties will eventually emerge, and the GM has the responsibility to decide which player goes first.</p>
 <p>Finally, the group determine the end-of-game station that will trigger the end of the session.</p>
 <h2 id="players-turn">Player's Turn</h2>
 <ol>
-<li>Roll 4d10 and look for proportions according to the <a href="../core_rules/"><em>Resonance System</em></a></li>
-<li>Add one die from your own <em>Resonance pool</em> or ask it from another player.</li>
-<li>Choose one pair of dice and perform the corresponding <a href="../core_rules/"><em>Eloquent Action</em></a></li>
-<li>Gain or lose <em>eloquence</em> tokens.</li>
-<li>Store one unused die from the initial 4d10 and add it to your <em>Resonance Pool</em>.</li>
-<li>Increase your station on the Game of Goose according to the action value.</li>
+<li>Roll 2d10 and look for proportions according to the <a href="../core_rules/"><strong>Resonance System</strong></a></li>
+<li>Eventually, add one die from your own <strong>Resonance Pool</strong> or ask it from another player.</li>
+<li>Choose one pair of dice and perform the corresponding <a href="../core_rules/"><strong>Eloquent Action</strong></a></li>
+<li>Advance or regress the station of your pawn on Goose Game board according to the chosen action.</li>
+<li>Store the die that was not chosen for the pair from the initial 2d8s and add it to your <strong>Resonance Pool</strong>.</li>
 </ol>
 <h2 id="the-game-session">The Game Session</h2>
-<p>The active player is the one with meeple at the lowest station of the Game of Goose. In case of ties, the GM decides which player goes first.</p>
-<p>Players are free to use at any times Minor Arcana cards, and place Legacy tokens on board.</p>
+<p>The active player is the one with pawn at the lowest station of the <strong>Game of Goose</strong>. In case of ties, the GM decides which player goes first.</p>
 <h3 id="end-of-the-game">End of the Game</h3>
-<p>Once a player reaches the end-of-game station the session is over.</p>
-<ul>
-<li>Each player calculates their final amount of coins.</li>
-<li>The GM computes the average value of those amounts.</li>
-<li>Each player calculates their <em>Harmony Score</em>, the absolute distance between their amount of coins and the average value.</li>
-<li>The sum of all <em>Harmony Scores</em> is the final result.</li>
-</ul>
+<p>Once a player reaches the end-of-game station the session is over. Complete the following steps in order to determine the final score, called <strong>Eloquence Score</strong>.</p>
+<ol>
+<li>The GM computes the average <span class="arithmatex">\(\mu\)</span> of the players' final station values <span class="arithmatex">\(x_i\)</span> on the Goose Game board, rounded down.</li>
+</ol>
+<div class="arithmatex">\[
+\mu = \dfrac{1}{n} \sum_i^n x_i 
+\]</div>
+<ol>
+<li>Each player calculate the absolute distance <span class="arithmatex">\(d_i\)</span> between their final station and the average <span class="arithmatex">\(\mu\)</span></li>
+</ol>
+<div class="arithmatex">\[
+d_i = |\mu - x_i|
+\]</div>
+<ol>
+<li>The GM determines the <strong>Connected Components Penalty</strong> <span class="arithmatex">\(p\)</span>. The more the knowledge graph is connected, the less numerical penalty.</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Connected components</th>
+<th style="text-align: center;"><span class="arithmatex">\(p\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">0</td>
+</tr>
+<tr>
+<td style="text-align: center;">2-3</td>
+<td style="text-align: center;">1</td>
+</tr>
+<tr>
+<td style="text-align: center;">4-6</td>
+<td style="text-align: center;">4</td>
+</tr>
+<tr>
+<td style="text-align: center;">7+</td>
+<td style="text-align: center;">8</td>
+</tr>
+</tbody>
+</table>
+<ol>
+<li>The final <strong>Eloquence Score</strong> <span class="arithmatex">\(E\)</span> is given by </li>
+</ol>
+<div class="arithmatex">\[
+E = p +\dfrac{1}{n}\sum_i^n d_i
+\]</div>
+<div class="admonition note inline end">
+<p class="admonition-title">Example</p>
+<p>Four players agreed to play until station 50 of the Goose Game. When one of them reaches the end-of-game station, the GM computes the average of their final positions (12,25,47,50) resulting in a value of 33. The player have generated a network of entities with 2 connected components, resulting in a penalty of 4 (the number of players). Afterwards, the <strong>Eloquence Score</strong> for the group is computed, adding the penalty, resulting in 1 + [(33-12) + (33-25) + (47-33) + (50-33)]/4 = 16.</p>
+</div>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Eloquence Score range</th>
+<th style="text-align: center;">Victory Level</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">0-5</td>
+<td style="text-align: center;">Excellent</td>
+</tr>
+<tr>
+<td style="text-align: center;">6-10</td>
+<td style="text-align: center;">Great</td>
+</tr>
+<tr>
+<td style="text-align: center;">11-15</td>
+<td style="text-align: center;">Good</td>
+</tr>
+<tr>
+<td style="text-align: center;">16-20</td>
+<td style="text-align: center;">Mediocre</td>
+</tr>
+<tr>
+<td style="text-align: center;">20+</td>
+<td style="text-align: center;">Unbalanced</td>
+</tr>
+</tbody>
+</table>
 
 
 
@@ -595,6 +672,12 @@
     
     
       <script src="../assets/javascripts/bundle.92b07e13.min.js"></script>
+      
+        <script src="../assets/js/katex.js"></script>
+      
+        <script src="https://unpkg.com/katex@0/dist/katex.min.js"></script>
+      
+        <script src="https://unpkg.com/katex@0/dist/contrib/auto-render.min.js"></script>
       
     
   </body>

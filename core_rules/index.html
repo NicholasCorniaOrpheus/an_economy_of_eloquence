@@ -70,6 +70,8 @@
     
       <link rel="stylesheet" href="../assets/css/extras.css">
     
+      <link rel="stylesheet" href="https://unpkg.com/katex@0/dist/katex.min.css">
+    
     <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -418,9 +420,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#harmony-score" class="md-nav__link">
+  <a href="#eloquence-score" class="md-nav__link">
     <span class="md-ellipsis">
-      Harmony Score
+      Eloquence Score
     </span>
   </a>
   
@@ -481,12 +483,11 @@
 <p>To embrace the main objectives of this game, namely collaborative knowledge building and unexpected intellectual journeys, we have designed a series of game mechanics that will help the players emulate a fruitful and truly collaborative conversation.</p>
 <h2 id="knowledge-graphs">Knowledge Graphs</h2>
 <p>A knowledge graph is a non-hierarchical data structure composed by entities, namely any sort of thing you can imagine, and statements connecting them.</p>
-<p>In <em>An Economy of Eloquence</em>, entities are represented by wooden tiles that can store a small index card. Statements, relating two entities on the graph, are represented by coloured cords. </p>
-<center><img src="../assets/images/entities_example_transparent.png" width="500" height="300"></center>
-
+<p>In <em>An Economy of Eloquence</em>, entities are represented by wooden hexagonal tiles that can store a small index card. During the game, tiles are connected with each other if the conversation creates a valuable statement between them. Interconnectivity between entities is a crucual facet of the game and players are encouraged to create as less connected components as possible by the end of the session.</p>
+<p><img alt="example_hexagonal_board" src="../assets/images/example_hexagonal_board.png" /></p>
 <h2 id="resonance-system">Resonance System</h2>
-<p>The Resonance System is a dice pool resolution mechanics designed by the author, and has been used in several experimental games such as <a href="https://nicholascornia89.github.io/sprezzatura_rpg/">Sprezzatura RPG</a>.</p>
-<p>The players will use pools of ten-sides dice (d10s) and assemble pairs of results to generate a rational number. The highest prime number of the fraction (after reducing it) is considered as result. With ten-sides dice there are only five possibilities, each of them reflecting a musical proportion, according to Medieval and Renaissance theory:</p>
+<p>The <strong>Resonance System</strong> is a dice pool resolution mechanics designed by Nicholas Cornia, and has been used in experimental games such as <a href="https://nicholascornia89.github.io/sprezzatura_rpg/">Sprezzatura RPG</a>.</p>
+<p>The players will use pools of ten-sides dice (d8s) and assemble pairs of results to generate a fractional number. The highest prime number of the fraction (after reducing numerator and denominator) is considered as result. With eight-sided dice there are only five possibilities, each of them reflecting a musical proportion, according to Medieval and Renaissance theory:</p>
 <ul>
 <li><strong>Unison (U)</strong>: A fraction giving the unit 1, when both dice presents the same number, generates the unison proportion.</li>
 <li><strong>Octave (O)</strong>: A fraction giving the ratio 2:1, such as <sup>4</sup>/<sub>2</sub>,   generates an octave.</li>
@@ -494,11 +495,11 @@
 <li><strong>Third (T)</strong>: A fraction with a ration such that the highest prime number is 5, such as <sup>6</sup>/<sub>5</sub> or <sup>5</sup>/<sub>4</sub>, generates the interval of third, and its complementary the sixth.</li>
 <li><strong>Dissonance (D)</strong>: In this system, ratios with a dominant prime number of 7 are associated with dissonant harsh sounds (at least for 16th centuries ears). </li>
 </ul>
-<p>Below a table describing all the possible combination of number given two d10s:</p>
+<p>Below a table describing all the possible combination of number given two d8s:</p>
 <table>
 <thead>
 <tr>
-<th style="text-align: center;">d10 x d10</th>
+<th style="text-align: center;">d8 x d8</th>
 <th style="text-align: center;">1</th>
 <th style="text-align: center;">2</th>
 <th style="text-align: center;">3</th>
@@ -507,8 +508,6 @@
 <th style="text-align: center;">6</th>
 <th style="text-align: center;">7</th>
 <th style="text-align: center;">8</th>
-<th style="text-align: center;">9</th>
-<th style="text-align: center;">10</th>
 </tr>
 </thead>
 <tbody>
@@ -522,8 +521,6 @@
 <td style="text-align: center;"><strong>F</strong></td>
 <td style="text-align: center;"><strong>D</strong></td>
 <td style="text-align: center;"><strong>O</strong></td>
-<td style="text-align: center;"><strong>F</strong></td>
-<td style="text-align: center;"><strong>T</strong></td>
 </tr>
 <tr>
 <td style="text-align: center;">2</td>
@@ -535,8 +532,6 @@
 <td style="text-align: center;"><strong>F</strong></td>
 <td style="text-align: center;"><strong>D</strong></td>
 <td style="text-align: center;"><strong>O</strong></td>
-<td style="text-align: center;"><strong>F</strong></td>
-<td style="text-align: center;"><strong>T</strong></td>
 </tr>
 <tr>
 <td style="text-align: center;">3</td>
@@ -548,8 +543,6 @@
 <td style="text-align: center;"><strong>O</strong></td>
 <td style="text-align: center;"><strong>D</strong></td>
 <td style="text-align: center;"><strong>F</strong></td>
-<td style="text-align: center;"><strong>T</strong></td>
-<td style="text-align: center;"><strong>T</strong></td>
 </tr>
 <tr>
 <td style="text-align: center;">4</td>
@@ -561,8 +554,6 @@
 <td style="text-align: center;"><strong>F</strong></td>
 <td style="text-align: center;"><strong>D</strong></td>
 <td style="text-align: center;"><strong>O</strong></td>
-<td style="text-align: center;"><strong>F</strong></td>
-<td style="text-align: center;"><strong>T</strong></td>
 </tr>
 <tr>
 <td style="text-align: center;">5</td>
@@ -574,8 +565,6 @@
 <td style="text-align: center;"><strong>T</strong></td>
 <td style="text-align: center;"><strong>D</strong></td>
 <td style="text-align: center;"><strong>T</strong></td>
-<td style="text-align: center;"><strong>T</strong></td>
-<td style="text-align: center;"><strong>O</strong></td>
 </tr>
 <tr>
 <td style="text-align: center;">6</td>
@@ -587,8 +576,6 @@
 <td style="text-align: center;"><strong>U</strong></td>
 <td style="text-align: center;"><strong>D</strong></td>
 <td style="text-align: center;"><strong>F</strong></td>
-<td style="text-align: center;"><strong>F</strong></td>
-<td style="text-align: center;"><strong>T</strong></td>
 </tr>
 <tr>
 <td style="text-align: center;">7</td>
@@ -599,8 +586,6 @@
 <td style="text-align: center;"></td>
 <td style="text-align: center;"></td>
 <td style="text-align: center;"><strong>U</strong></td>
-<td style="text-align: center;"><strong>D</strong></td>
-<td style="text-align: center;"><strong>D</strong></td>
 <td style="text-align: center;"><strong>D</strong></td>
 </tr>
 <tr>
@@ -613,108 +598,79 @@
 <td style="text-align: center;"></td>
 <td style="text-align: center;"></td>
 <td style="text-align: center;"><strong>U</strong></td>
-<td style="text-align: center;"><strong>F</strong></td>
-<td style="text-align: center;"><strong>T</strong></td>
-</tr>
-<tr>
-<td style="text-align: center;">9</td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"><strong>U</strong></td>
-<td style="text-align: center;"><strong>T</strong></td>
-</tr>
-<tr>
-<td style="text-align: center;">10</td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"><strong>U</strong></td>
 </tr>
 </tbody>
 </table>
-<p>Given two dice the probability to obtain a given musical interval is not uniform, this means that the game favors some results than others. It is up to the players to bend this asymmetry in their favor thanks to the <em>Resonance Pool</em> mechanics.</p>
+<p>Given two dice the probability to obtain a given musical interval is not uniform: this asymmetry in the results' distribution means that the game favors some results than others. It is up to the players to bend this asymmetry in their favor thanks to the <strong>Resonance Pool</strong> mechanics.</p>
 <p>Here you can find the probability distribution, given two dice of obtaining a certain proportion:</p>
 <ul>
-<li>P(U) = <sup>10</sup>/<sub>100</sub></li>
-<li>P(O) = <sup>16</sup>/<sub>100</sub></li>
-<li>P(F) = <sup>26</sup>/<sub>100</sub></li>
-<li>P(T) = <sup>30</sup>/<sub>100</sub></li>
-<li>P(D) = <sup>18</sup>/<sub>100</sub></li>
+<li>P(U) = <sup>1</sup>/<sub>8</sub> ~ 12.5 %</li>
+<li>P(O) = <sup>7</sup>/<sub>32</sub> ~ 21.9 %</li>
+<li>P(F) = <sup>1</sup>/<sub>4</sub> ~ 25 %</li>
+<li>P(T) = <sup>3</sup>/<sub>16</sub> ~ 18.8 %</li>
+<li>P(D) = <sup>7</sup>/<sub>32</sub> ~ 21.9 %</li>
 </ul>
 <h3 id="resonance-pool">Resonance Pool</h3>
-<p>At the end of each turn, the active player can store an unused die, one that did not belong to the pair of dice that generated the action just taken, to a personal pool called the <em>Resonance Pool</em>. These dice can be used at any moment by the player to assemble musical intervals either during their turn of any other player's. There is no limit of dice that can be kept, but an action like <em>discord</em> can potentially reset a player's pool.</p>
-<p>This mechanics has been designed to encourage collaboration and engagement of all players, reducing the burden of <em>downtime</em><sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup>.</p>
+<p>At the end of each turn, the active player can store an unused die, one that did not belong to the pair of dice that generated the action just taken, to a personal pool called the <strong>Resonance Pool</strong>. These dice can be used at any moment by the player to assemble musical intervals either during their own turn of any other player's. There is no limit of dice that can be kept, but an action like <strong>Friction</strong> can potentially reset a player's pool.</p>
+<p>This mechanics has been designed to encourage collaboration and engagement of all players, reducing the burden of <em>downtime</em><sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup> by introducing agency of players in between turns.</p>
 <h2 id="eloquent-actions">Eloquent Actions</h2>
-<p>To determine the available actions, a player rolls 4 ten-sided dice at the beginning of their turn. They can assemble a pair of dice to generate a musical interval, selecting dice from</p>
+<p>To determine the available actions, a player rolls two eight-sided dice at the beginning of their turn. They can assemble a pair of dice to generate a musical interval, selecting dice from</p>
 <ul>
-<li>the 4 dice just rolled</li>
+<li>the two dice just rolled</li>
 <li>a die from their own <em>Resonance Pool</em></li>
 <li>a die from another player's <em>Resonance Pool</em></li>
 </ul>
-<div class="admonition info">
-<p class="admonition-title">Dissonance</p>
-<p>Note that if one of the dice just rolled is a 7 it has to be selected by the active player, unless it can be paired with another 7 from the board or <em>Resonance Pools</em> to generate a Unison.</p>
-</div>
-<p>Below the list of actions associated with each musical interval:</p>
+<p>Below you can find the list of actions associated with each musical interval:</p>
 <div class="grid cards">
 <ul>
 <li>
 <p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c-.34.34-.67.67-.68 1-.03.32.31.65.63.96.48.5.95.95.93 1.44s-.53 1-1.04 1.5l-4.13 4.14L15 14.66l4.25-4.24-.96-.96-1.42 1.41-3.75-3.75 3.84-3.83c.39-.39 1.04-.39 1.41 0l2.34 2.34c.39.37.39 1.02 0 1.41M3 17.25l9.56-9.57 3.75 3.75L6.75 21H3z"/></svg></span> <strong>Invent (Fifth)</strong></p>
 <hr />
-<p>The interval of a Fifth allows the active player to <em>Invent</em>. </p>
-<p>You can introduce a new entity on the knowledge graph and describe it to the fellow players using a time slot. The can create a statement with an entity already present on the board if they wish.</p>
-<p>Afterwards, gain one <em>eloquence</em> tokens. <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 13h-4v4h-2v-4H7v-2h4V7h2v4h4m-5-9A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2"/></svg></span></p>
+<p>The interval of a Fifth allows the active player to <strong>Invent</strong>. </p>
+<p>You can introduce a new entity on the knowledge graph and describe it to the fellow players using a time slot.</p>
+<p>Afterwards, roll two d6s and advance your station accordingly </p>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 13h-4v4h-2v-4H7v-2h4V7h2v4h4m-5-9A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2"/></svg></span> <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 3h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2m2 2a2 2 0 0 0-2 2 2 2 0 0 0 2 2 2 2 0 0 0 2-2 2 2 0 0 0-2-2m10 10a2 2 0 0 0-2 2 2 2 0 0 0 2 2 2 2 0 0 0 2-2 2 2 0 0 0-2-2m0-5a2 2 0 0 0-2 2 2 2 0 0 0 2 2 2 2 0 0 0 2-2 2 2 0 0 0-2-2m0-5a2 2 0 0 0-2 2 2 2 0 0 0 2 2 2 2 0 0 0 2-2 2 2 0 0 0-2-2M7 10a2 2 0 0 0-2 2 2 2 0 0 0 2 2 2 2 0 0 0 2-2 2 2 0 0 0-2-2m0 5a2 2 0 0 0-2 2 2 2 0 0 0 2 2 2 2 0 0 0 2-2 2 2 0 0 0-2-2"/></svg></span> <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 3h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2m2 2a2 2 0 0 0-2 2 2 2 0 0 0 2 2 2 2 0 0 0 2-2 2 2 0 0 0-2-2m10 10a2 2 0 0 0-2 2 2 2 0 0 0 2 2 2 2 0 0 0 2-2 2 2 0 0 0-2-2m0-5a2 2 0 0 0-2 2 2 2 0 0 0 2 2 2 2 0 0 0 2-2 2 2 0 0 0-2-2m0-5a2 2 0 0 0-2 2 2 2 0 0 0 2 2 2 2 0 0 0 2-2 2 2 0 0 0-2-2M7 10a2 2 0 0 0-2 2 2 2 0 0 0 2 2 2 2 0 0 0 2-2 2 2 0 0 0-2-2m0 5a2 2 0 0 0-2 2 2 2 0 0 0 2 2 2 2 0 0 0 2-2 2 2 0 0 0-2-2"/></svg></span></p>
 </li>
 <li>
 <p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M0 1.75A.75.75 0 0 1 .75 1h4.253c1.227 0 2.317.59 3 1.501A3.74 3.74 0 0 1 11.006 1h4.245a.75.75 0 0 1 .75.75v10.5a.75.75 0 0 1-.75.75h-4.507a2.25 2.25 0 0 0-1.591.659l-.622.621a.75.75 0 0 1-1.06 0l-.622-.621A2.25 2.25 0 0 0 5.258 13H.75a.75.75 0 0 1-.75-.75Zm7.251 10.324.004-5.073-.002-2.253A2.25 2.25 0 0 0 5.003 2.5H1.5v9h3.757a3.75 3.75 0 0 1 1.994.574M8.755 4.75l-.004 7.322a3.75 3.75 0 0 1 1.992-.572H14.5v-9h-3.495a2.25 2.25 0 0 0-2.25 2.25"/></svg></span> <strong>Digress (Third)</strong></p>
 <hr />
-<p>The interval of a Third allows the active player to <em>Digress</em>.</p>
-<p>You can use a time slot to deepen the conversation around an entity on the knowledge graph. After that they can create a statement, a new connection with another concept on board.</p>
-<p>Afterwards, gain one <em>eloquence</em> token. <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 13h-4v4h-2v-4H7v-2h4V7h2v4h4m-5-9A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2"/></svg></span></p>
+<p>The interval of a Third allows the active player to <strong>Digress</strong>.</p>
+<p>You can use a time slot to deepen the conversation around an entity on the knowledge graph. After that they can establish a new connection with another concept on board by attaching the two hexagons if a spot is still available.</p>
+<p>Afterwards, roll one d6 and avance your station accordingly </p>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 13h-4v4h-2v-4H7v-2h4V7h2v4h4m-5-9A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2"/></svg></span> <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 3h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2m2 2a2 2 0 0 0-2 2 2 2 0 0 0 2 2 2 2 0 0 0 2-2 2 2 0 0 0-2-2m10 10a2 2 0 0 0-2 2 2 2 0 0 0 2 2 2 2 0 0 0 2-2 2 2 0 0 0-2-2m0-5a2 2 0 0 0-2 2 2 2 0 0 0 2 2 2 2 0 0 0 2-2 2 2 0 0 0-2-2m0-5a2 2 0 0 0-2 2 2 2 0 0 0 2 2 2 2 0 0 0 2-2 2 2 0 0 0-2-2M7 10a2 2 0 0 0-2 2 2 2 0 0 0 2 2 2 2 0 0 0 2-2 2 2 0 0 0-2-2m0 5a2 2 0 0 0-2 2 2 2 0 0 0 2 2 2 2 0 0 0 2-2 2 2 0 0 0-2-2"/></svg></span></p>
 </li>
 <li>
 <p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M1.75 1h8.5c.966 0 1.75.784 1.75 1.75v5.5A1.75 1.75 0 0 1 10.25 10H7.061l-2.574 2.573A1.458 1.458 0 0 1 2 11.543V10h-.25A1.75 1.75 0 0 1 0 8.25v-5.5C0 1.784.784 1 1.75 1M1.5 2.75v5.5c0 .138.112.25.25.25h1a.75.75 0 0 1 .75.75v2.19l2.72-2.72a.75.75 0 0 1 .53-.22h3.5a.25.25 0 0 0 .25-.25v-5.5a.25.25 0 0 0-.25-.25h-8.5a.25.25 0 0 0-.25.25m13 2a.25.25 0 0 0-.25-.25h-.5a.75.75 0 0 1 0-1.5h.5c.966 0 1.75.784 1.75 1.75v5.5A1.75 1.75 0 0 1 14.25 12H14v1.543a1.458 1.458 0 0 1-2.487 1.03L9.22 12.28a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l2.22 2.22v-2.19a.75.75 0 0 1 .75-.75h1a.25.25 0 0 0 .25-.25Z"/></svg></span> <strong>Quarrel (Unison)</strong></p>
 <hr />
-<p>The inverval of an Unison allows the active player to <em>Quarrel</em>.</p>
+<p>The inverval of an Unison allows the active player to <strong>Quarrel</strong>.</p>
 <p>Choose two players (they can include youself) and an entity on the knowledge graph.</p>
 <p>The designated players receive two time slots to discuss about a topic associated with the entity. </p>
-<p>After that the other players who did not participated in the content, vote the most convincing speaker who immediately can create a statement.</p>
-<p>If you have been part of the quarrel, gain one <em>eloquence</em> token, otherwise lose one. <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 13h-4v4h-2v-4H7v-2h4V7h2v4h4m-5-9A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2"/></svg></span> <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 13H7v-2h10m-5-9A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2"/></svg></span></p>
+<p>After that the other players who did not participated in the content, vote the most convincing speaker who immediately can create a new connection between two existing entities or a brand new one on the board.</p>
+<p>Afterwards, each player that participated to the quarrel advances their pawn d6 steps. </p>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 13h-4v4h-2v-4H7v-2h4V7h2v4h4m-5-9A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2"/></svg></span> <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 3h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2m2 2a2 2 0 0 0-2 2 2 2 0 0 0 2 2 2 2 0 0 0 2-2 2 2 0 0 0-2-2m10 10a2 2 0 0 0-2 2 2 2 0 0 0 2 2 2 2 0 0 0 2-2 2 2 0 0 0-2-2m0-5a2 2 0 0 0-2 2 2 2 0 0 0 2 2 2 2 0 0 0 2-2 2 2 0 0 0-2-2m0-5a2 2 0 0 0-2 2 2 2 0 0 0 2 2 2 2 0 0 0 2-2 2 2 0 0 0-2-2M7 10a2 2 0 0 0-2 2 2 2 0 0 0 2 2 2 2 0 0 0 2-2 2 2 0 0 0-2-2m0 5a2 2 0 0 0-2 2 2 2 0 0 0 2 2 2 2 0 0 0 2-2 2 2 0 0 0-2-2"/></svg></span> </p>
+<p>If you did not participate to the quarrel, regress your pawn two steps <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 13H7v-2h10m-5-9A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2"/></svg></span></p>
 </li>
 <li>
 <p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12.103 0C18.666 0 24 5.485 24 11.997c0 6.51-5.33 11.99-11.9 11.99L0 24V11.79C0 5.28 5.532 0 12.103 0m.116 4.563a7.4 7.4 0 0 0-6.337 3.57 7.25 7.25 0 0 0-.148 7.22L4.4 19.61l4.794-1.074a7.42 7.42 0 0 0 8.136-1.39 7.26 7.26 0 0 0 1.737-7.997 7.375 7.375 0 0 0-6.84-4.585z"/></svg></span> <strong>Summon (Octave)</strong></p>
 <hr />
-<p>The interval of an Octave allows the active player to <em>Summon</em>.</p>
+<p>The interval of an Octave allows the active player to <strong>Summon</strong>.</p>
 <p>Choose a fellow player and invite them to talk about an entity on board.</p>
-<p>After that you can create a statement,then lose one <em>eloquence</em> token. <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 13H7v-2h10m-5-9A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2"/></svg></span></p>
+<p>After that, draw together a new connection on the board that has been the most representative from the discussion. </p>
+<p>Afterwards, the fellow player advances their pawn one d6 </p>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 13h-4v4h-2v-4H7v-2h4V7h2v4h4m-5-9A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2"/></svg></span> <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 3h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2m2 2a2 2 0 0 0-2 2 2 2 0 0 0 2 2 2 2 0 0 0 2-2 2 2 0 0 0-2-2m10 10a2 2 0 0 0-2 2 2 2 0 0 0 2 2 2 2 0 0 0 2-2 2 2 0 0 0-2-2m0-5a2 2 0 0 0-2 2 2 2 0 0 0 2 2 2 2 0 0 0 2-2 2 2 0 0 0-2-2m0-5a2 2 0 0 0-2 2 2 2 0 0 0 2 2 2 2 0 0 0 2-2 2 2 0 0 0-2-2M7 10a2 2 0 0 0-2 2 2 2 0 0 0 2 2 2 2 0 0 0 2-2 2 2 0 0 0-2-2m0 5a2 2 0 0 0-2 2 2 2 0 0 0 2 2 2 2 0 0 0 2-2 2 2 0 0 0-2-2"/></svg></span> </p>
+<p>and you regress 2 steps <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 13H7v-2h10m-5-9A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2"/></svg></span></p>
 </li>
 <li>
 <p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11 15H6l7-14v8h5l-7 14z"/></svg></span> <strong>Friction (Dissonance)</strong> </p>
 <hr />
-<p>A Dissonance forces the active player to <em>Friction</em>.</p>
-<p>Choose one of the following options:</p>
-<ul>
-<li>Reset your <em>Resonance Pool</em> to empty, then lose two <em>eloquence</em> tokens. <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 13H7v-2h10m-5-9A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2"/></svg></span></li>
-<li>Designate another player and empty their <em>Resonance Pool</em>, then gain two <em>eloquence</em> tokens. <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 13h-4v4h-2v-4H7v-2h4V7h2v4h4m-5-9A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2"/></svg></span></li>
-<li>Gain four <em>eloquence tokens</em> with no further consequences. <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 13h-4v4h-2v-4H7v-2h4V7h2v4h4m-5-9A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2"/></svg></span></li>
-</ul>
+<p>A <em>Dissonace</em> generates a <strong>Friction</strong>. Reset <strong>all</strong> <strong>Resonance Pools</strong> by removing all collected dice from each player.</p>
+<p>Afterwards regress your pawn by two d6s.</p>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 13H7v-2h10m-5-9A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2"/></svg></span> <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 3h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2m2 2a2 2 0 0 0-2 2 2 2 0 0 0 2 2 2 2 0 0 0 2-2 2 2 0 0 0-2-2m10 10a2 2 0 0 0-2 2 2 2 0 0 0 2 2 2 2 0 0 0 2-2 2 2 0 0 0-2-2m0-5a2 2 0 0 0-2 2 2 2 0 0 0 2 2 2 2 0 0 0 2-2 2 2 0 0 0-2-2m0-5a2 2 0 0 0-2 2 2 2 0 0 0 2 2 2 2 0 0 0 2-2 2 2 0 0 0-2-2M7 10a2 2 0 0 0-2 2 2 2 0 0 0 2 2 2 2 0 0 0 2-2 2 2 0 0 0-2-2m0 5a2 2 0 0 0-2 2 2 2 0 0 0 2 2 2 2 0 0 0 2-2 2 2 0 0 0-2-2"/></svg></span> <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 3h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2m2 2a2 2 0 0 0-2 2 2 2 0 0 0 2 2 2 2 0 0 0 2-2 2 2 0 0 0-2-2m10 10a2 2 0 0 0-2 2 2 2 0 0 0 2 2 2 2 0 0 0 2-2 2 2 0 0 0-2-2m0-5a2 2 0 0 0-2 2 2 2 0 0 0 2 2 2 2 0 0 0 2-2 2 2 0 0 0-2-2m0-5a2 2 0 0 0-2 2 2 2 0 0 0 2 2 2 2 0 0 0 2-2 2 2 0 0 0-2-2M7 10a2 2 0 0 0-2 2 2 2 0 0 0 2 2 2 2 0 0 0 2-2 2 2 0 0 0-2-2m0 5a2 2 0 0 0-2 2 2 2 0 0 0 2 2 2 2 0 0 0 2-2 2 2 0 0 0-2-2"/></svg></span></p>
 </li>
 </ul>
 </div>
 <h2 id="the-game-of-goose">The Game of Goose</h2>
-<p>Inspired by the board game <a href="https://boardgamegeek.com/boardgame/163412/patchwork"><em>Patchwork</em></a>, we decided to use a dynamic initiative system for our game as an alternative to the conventional clockwise or counter-clockwise turn order. Each player places a meeple on a Game of Goose board. At the end of each player's turn, their meeple will advance according to the perfomed <em>Eloquent Action</em>.</p>
+<p>Inspired by the board game <a href="https://boardgamegeek.com/boardgame/163412/patchwork"><em>Patchwork</em></a>, we decided to use a dynamic initiative system for our game as an alternative to the conventional clockwise or counter-clockwise turn order. Each player places a pawn on a Game of Goose board, both representing their score and initiative position. At the end of each player's turn, their pawn will advance according to the perfomed <strong>Eloquent Action</strong>.</p>
 <table>
 <thead>
 <tr>
@@ -724,72 +680,38 @@
 </thead>
 <tbody>
 <tr>
-<td><em>Invent</em></td>
-<td>2d6</td>
+<td><strong>Invent</strong></td>
+<td>+2d6</td>
 </tr>
 <tr>
-<td><em>Digress</em></td>
-<td>2d6</td>
+<td><strong>Digress</strong></td>
+<td>+1d6</td>
 </tr>
 <tr>
-<td><em>Quarrel</em></td>
-<td>3d6</td>
+<td><strong>Quarrel</strong></td>
+<td>+1d6 for each participant, -2 active player</td>
 </tr>
 <tr>
-<td><em>Summon</em></td>
-<td>2d6</td>
+<td><strong>Summon</strong></td>
+<td>+1d6 participant, -2 active player</td>
 </tr>
 <tr>
-<td><em>Friction</em></td>
-<td>3d6</td>
+<td><strong>Friction</strong></td>
+<td>-2d6, reset all <strong>Resonace Pools</strong></td>
 </tr>
 </tbody>
 </table>
-<p>Usually, the player with meeple in the lowest station of the Game of Goose can take the next turn. In case of ties, the GM can choose which player goes first.</p>
+<p>Usually, the player with pawn in the lowest station of the Game of Goose can take the next turn. In case of ties, the GM can choose which player goes first.</p>
 <p>The GM has to decide beforehand which station will end the game. We advise the following values, but bear in mind that larger groups will take longer to reach the end station:</p>
 <ul>
 <li>28 for a short session</li>
 <li>42 for a comprehensive exploration</li>
 <li>63 for a long session ranging multiple hours, for example a conference day.</li>
 </ul>
-<h2 id="harmony-score">Harmony Score</h2>
+<h2 id="eloquence-score">Eloquence Score</h2>
 <p><em>An Economy of Eloquence</em> is a cooperative game that takes inspiration to collaborative games such as <a href="https://boardgamegeek.com/boardgame/98778/hanabi"><em>Hanabi</em></a> and <a href="https://boardgamegeek.com/boardgame/422620/tales-of-kunugi"><em>Tales of Kunugi</em></a>.</p>
-<p>The main goal of the group is to achieve the lowest collective <em>Harmony Score</em>, reflecting balance and collaboration between the players during the creation of the knowledge graph.</p>
-<p>When a player reaches the designated end-of-game station, the game session ends.  The GM computes the average value (rounded up) for all players, based on the amount of coins they own. </p>
-<p>Afterwards, each player computes the absolute distance between their coin amount and the aforementioned average value. This number is called the <em>Harmony Score</em> of a player. Finally, the GM computes the sum of all the Harmony scores, and the final result will reflect how balance and collaborative the game session has been.</p>
-<p>For example, a session with 5 players ends with <em>eloquence</em> tokens amounts of 8, 12, 10, 22 and 14.
-The average value is 14 (rounded up) and for each player we have <em>Harmony Scores</em> of 6, 2, 4, 8, 0, leading to a final collective value of 20.</p>
-<p>Average Harmony score (heuristic) table, based on the number of players <em>n</em></p>
-<table>
-<thead>
-<tr>
-<th>Average Harmony Score range</th>
-<th>Victory Level</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>0 to <em>n</em></td>
-<td>Excellent</td>
-</tr>
-<tr>
-<td><em>n+1</em> to <em>2n</em></td>
-<td>Great</td>
-</tr>
-<tr>
-<td><em>2n+1</em> to <em>3n</em></td>
-<td>Good</td>
-</tr>
-<tr>
-<td><em>3n+1</em> to <em>4n</em></td>
-<td>Mediocre</td>
-</tr>
-<tr>
-<td>more than <em>4n+1</em></td>
-<td>Unbalanced</td>
-</tr>
-</tbody>
-</table>
+<p>The main goal of the group is to achieve the lowest collective <strong>Eloquence Score</strong>, reflecting balance and collaboration between the players during the creation of the knowledge graph. For a detailed calcuation of the score, see the <a href="../playing_the_game/">End of the Game</a> section.</p>
+<p>When a player reaches the designated end-of-game station, the game session ends.  The GM and the players compute the final <strong>Eloquence Score</strong> based on the average distance between the players' final stations and the mean position on the <strong>Game of Goose</strong>. In order to win, the players must ensure a balanced distributions of stations at the end of the game, reflecting how much a player has participated to the discussion. Furthermore, connectivity between entities is encouraged via a <strong>Connected Components Penalty</strong> score, inviting players to link all concepts in a unique narrative.</p>
 <div class="footnote">
 <hr />
 <ol>
@@ -874,6 +796,12 @@ The average value is 14 (rounded up) and for each player we have <em>Harmony Sco
     
     
       <script src="../assets/javascripts/bundle.92b07e13.min.js"></script>
+      
+        <script src="../assets/js/katex.js"></script>
+      
+        <script src="https://unpkg.com/katex@0/dist/katex.min.js"></script>
+      
+        <script src="https://unpkg.com/katex@0/dist/contrib/auto-render.min.js"></script>
       
     
   </body>
