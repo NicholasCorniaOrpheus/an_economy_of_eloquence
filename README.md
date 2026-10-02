@@ -1,24 +1,15 @@
-# A Shelves Voyage
+# An Economy of Eloquence
 
-Board game designed by [Nicholas Cornia](https://orpheusinstituut.be/nl/orpheus-research-centre/onderzoekers/nicholas-cornia) for the [Resounding Libraries](https://orpheusinstituut.be/nl/projecten/resounding-libraries) research cluster.
+Board game designed by [Nicholas Cornia](https://orpheusinstituut.be/en/research/researchers/nicholas-cornia) for the [Resounding Libraries](https://orpheusinstituut.be/en/projects/resounding-libraries) research cluster.
 
 # What is the game about?
 
-A Shelves Voyage is a game about discovery, plurality, and unexpected journeys designed
-for researchers and librarians wishing to unchain the potential of knowledge graphs in their
-practice.
+_An Economy of Eloquence_ is a game about **discovery**, **plurality**, and **unexpected journeys** designed for researchers and librarians.
 
-During a game session, the players are encouraged to reconsider their viewpoint on entities 
-and concepts related to their research field, or catalogue, through a collaborative, and
-sometimes adversarial, creation of a knowledge graph of entities and properties.
-We have introduced some randomness in the process to drive players outside their intellectual comfort zones, 
-to explore the possibilities of unbeaten tracks, opening to the marvel of
-possibilities of ars combinatoria.
+During a game session, the players collaboratively build a small **knowledge graph** by reconsidering their viewpoint on entities and concepts related to their research field, or items belonging to the library catalogue of their institution. After each game session, an unexpected knowledge structure will emerge from the collaborative, and sometimes adversarial, effort of the player. This game encourages **collaborative research** between fellow researchers at any stage of their work, in opposition to solitary and competition-based inquiry.
 
-Furthermore, the game is suited for researchers and librarians willing to think in semantic
-triples, according to the Resource Description Framework (RDF), and explore the possibilities
-provided by Linked Open Data and knowledge graphs.
-This small game wishes to accustom in a fun and engaging way the ones who dare to under-
-stand the potential of these new technologies for the Humanities and the Arts.
+We have introduced some randomness, in the form of dice pool governed by the _Resonance System_, in the process to drive players outside their intellectual comfort zones, exploring the possibilities of unbeaten tracks and negotiation.
+
+This game could be easily adapted for introductory talks, open discussions and panel sessions during conferences, and even project brainstorming. Despite the scholarly theme given to the game, it could be played by any collective of people outside academia willing to explore conversation and decision-making playfully. The same game-mechanics could be easily applied for storytelling and worldbuilding games, if you are nerd enough.
 
 
